@@ -1,5 +1,25 @@
+body {
+	margin: 20px;
+	background-color:lightblue
+}
+
 h1 {
-	background-color: green;
+	color: green;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+   font-family: 'CovalRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+#zaglavie {
+	border: 100px solid blue;
+	padding: 20px;
+	margin: 50px;
+}
+.vazhno {
+	background-color: lightblue;
 }
 img {
 	width: 200px;
