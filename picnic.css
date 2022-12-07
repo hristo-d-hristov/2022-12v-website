@@ -1,3 +1,12 @@
+#edno {
+	background-color:lightgreen;
+}
+#dve {
+	background-color:yellow;
+}
+#tri {
+	background-color:purple;
+}
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
