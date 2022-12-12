@@ -1,6 +1,7 @@
 body {
 	margin: 20px;
-	background-color:lightblue
+	background-color:lightblue;
+	padding-top: 30px;
 }
 
 h1 {
@@ -13,23 +14,17 @@ p {
    font-weight: normal;
    font-style: normal;
 }
-#zaglavie {
-	border: 100px solid blue;
-	padding: 20px;
-	margin: 50px;
-}
 .vazhno {
 	background-color: lightblue;
 }
-img {
-	width: 200px;
+.card > * {
+	width: 100%;
 	height: auto;
 }
-video {
-	width: 320px;
-	height: auto;
+nav img {
+	width: auto;
 }
-iframe {
-	width: 320px;
-	height: auto;
+nav {
+	position: absolute;
+	background-color: #999999;
 }
