@@ -4,51 +4,132 @@
         <title>Автомобили</title>
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bretan" type="text/css"/>
-        <link rel="stylesheet" href="picnic.css">
+        <link rel="stylesheet" href="bootstrap.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <nav>
-            <a href="index.html" class="brand">
-                <img class="logo" src="favicon.png" />
-                <span>Авто</span>
-            </a>
-            <input id="menu" type="checkbox" class="show">
-            <label for="menu" class="burger pseudo button">меню</label>
-
-            <div class="menu">
-                <a href="istoriq.html" class="pseudo button icon-picture">История</a>
-                <a href="ustroistvo.html" class="pseudo button icon-puzzle">Устройство</a>
-                <a href="vidove.html" class="pseudo button icon-puzzle">Видове</a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="d-inline-block align-text-top" src="favicon.png"/> Авто
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="istoriq.html">История</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ustroistvo.html">Устройство</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vidove.html">Видове</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="flex center">
-            <!-- Това е коментар и няма да се вижда в браузъра -->
-            <h1 class="full">Автомобил</h1>
-            <p class="full half-500 two-third-900">Автомобил (на старогръцки: αὐτο – сам, самостоятелно и на латински: mobilis – движещ се), разговорно се използва кола, е моторно превозно средство (МПС) с повече от две колела или гуми, обикновено четири (тоест безрелсово), предназначено за транспорт, придвижване, както и превозване на пътници и багаж; също понякога и товари (при лекотоварните автомобили или бусове). Автомобилите се разделят на няколко основни групи: леки автомобили (за превозване на хора, обикновено 4 до 9 души) и лекотоварни автомобили; други типове са автобуси (за превозване на повече хора) и камиони (за превозване на товари), също тирове, както и специални автомобили (с монтирано специализирано оборудване, например такива за инвалиди, автокранове или пожарни коли).</p>
-            <div class="full half-500 third-900">
-                <article class="card">
-                    <img src="avtomobili.jpg">
-                </article>
+        <!--
+        <nav>
+            <a href="index.html">
+                <img src="favicon.png" />
+                <span>Авто</span>
+            </a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+        -->
+
+        <div class="container">
+            <div class="row">
+                <!-- Това е коментар и няма да се вижда в браузъра -->
+                <div class="col-12">
+                    <h1>Автомобил</h1>
+                </div>
             </div>
-            <div class="one half-500">
-                <article class="card">
-                    <video controls>
+
+            <div class="row">
+                <div class="col-12">
+                     <table class="table table-dark table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Автомобил (на старогръцки: αὐτο – сам, самостоятелно и на латински: mobilis – движещ се), разговорно се използва кола, е моторно превозно средство (МПС) с повече от две колела или гуми, обикновено четири (тоест безрелсово), предназначено за транспорт, придвижване, както и превозване на пътници и багаж; също понякога и товари (при лекотоварните автомобили или бусове). Автомобилите се разделят на няколко основни групи: леки автомобили (за превозване на хора, обикновено 4 до 9 души) и лекотоварни автомобили; други типове са автобуси (за превозване на повече хора) и камиони (за превозване на товари), също тирове, както и специални автомобили (с монтирано специализирано оборудване, например такива за инвалиди, автокранове или пожарни коли).</p>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="avtomobili.jpg">
+                        <figcaption class="figure-caption">Автомобили</figcaption>
+                    </figure>
+                    <img class="img-thumbnail" src="avtomobili.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <video class="img-fluid" controls>
                         <source src="https://upload.wikimedia.org/wikipedia/commons/7/73/Once_Upon_a_Honeymoon_%281956%29.webm" type="video/webm">
                         Браузърът Ви не поддържа никой от форматите на това видео.
                     </video>
-                </article>
-            </div>
-            <div class="one half-500">
-                <article class="card">
-                    <iframe src="https://www.youtube.com/embed/7a1cjbxTV6E"></iframe>
-                </article>
-
-                <article class="card">
-                    <audio controls>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/7a1cjbxTV6E"></iframe>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <audio class="img-fluid" controls>
                         <source src="sparrow.mp3" type="audio/mpeg">
                     </audio>
-                </article>
+                </div>
             </div>
         </div>
     </body>
