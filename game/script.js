@@ -6,14 +6,45 @@ canvas.width = canvasWidth * sqsize;
 canvas.height = canvasHeight * sqsize;
 
 let context = canvas.getContext("2d");
-let numx = 100;
-let numy = 500;
+let herox = 1;
+let heroy = 2;
 
-for (let i = 0; i < numx; i++) {
-	for (let j = 0; j < numy; j++) {
-		context.strokeRect(i * sqsize, j * sqsize, sqsize, sqsize);
-	}
+let img = new Image();
+img.src = "hero.png";
+
+//context.fillRect(herox * sqsize, heroy * sqsize, sqsize, sqsize);
+
+function drawMapAndHero() {
+    // изчистване на платното
+    context.fillStyle = "white";
+    context.fillRect(0, 0, canvasWidth * sqsize, canvasHeight * sqsize);
+    
+    // рисуване на героя
+	context.drawImage(img, herox * sqsize, heroy * sqsize, sqsize, sqsize);
+	
+	// рисуване на мрежата
+    for (let i = 0; i < canvasWidth; i++) {
+	    for (let j = 0; j < canvasHeight; j++) {
+		    context.strokeRect(i * sqsize, j * sqsize, sqsize, sqsize);
+	    }
+    }
 }
+
+drawMapAndHero();
+
+canvas.onclick = function(e) {
+    // координати на мишката в пиксели
+    let mousePosX = e.x - e.originalTarget.offsetLeft;
+    let mousePosY = e.y  - e.originalTarget.offsetTop;
+    
+    // координати на мишката в квадратчета от картата
+    herox = Math.floor(mousePosX / sqsize);
+    heroy = Math.floor(mousePosY / sqsize);
+    
+    drawMapAndHero();
+}
+
+
 
 // Радо
 //context.strokeRect(0, 0, 50, 50);
