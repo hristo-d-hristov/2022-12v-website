@@ -44,6 +44,32 @@ canvas.onclick = function(e) {
     drawMapAndHero();
 }
 
+function moveUp() {
+    heroy--;
+    drawMapAndHero();
+}
+
+function moveDown() {
+    console.log("надолу");
+}
+
+function moveLeft() {
+    console.log("наляво");
+}
+
+function moveRight() {
+    console.log("надясно");
+}
+
+document.onkeypress = function(e) {
+    let key = e.key;
+    switch(key) {
+        case "w": moveUp(); break;
+        case "s": moveDown(); break;
+        case "a": moveLeft(); break;
+        case "d": moveRight(); break;
+    }
+}
 
 
 // Радо
