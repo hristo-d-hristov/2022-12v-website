@@ -1,0 +1,15 @@
+body {
+	/*background-color:lightblue;*/
+}
+
+h1 {
+	color: green;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+   font-family: 'CovalRegular';
+   font-weight: normal;
+   font-style: normal;
+}
